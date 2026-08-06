@@ -16,7 +16,13 @@ DeepPi is dormant for every other provider and model.
 ## Install
 
 ```bash
-pi install git:github.com/christopherarter/deep-pi
+pi install npm:@arter/deep-pi@1.0.0
+```
+
+To try it for a single run without installing:
+
+```bash
+pi -e npm:@arter/deep-pi
 ```
 
 Reload Pi, select a supported direct DeepSeek model, and run `/deeppi`.
