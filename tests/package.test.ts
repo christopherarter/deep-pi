@@ -8,7 +8,7 @@ const extensionsDir = fileURLToPath(new URL("../extensions", import.meta.url));
 describe("DeepPi package identity", () => {
 	it("uses the final package and extension names", async () => {
 		const pkg = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
-		expect(pkg.name).toBe("deep-pi");
+		expect(pkg.name).toBe("@arter/deep-pi");
 		expect(pkg.version).toBe("1.0.0");
 		expect(pkg.pi.extensions).toEqual(["./extensions/deeppi.ts"]);
 		expect(pkg.scripts["benchmark:live"]).toBe("node scripts/live-benchmark.mjs");

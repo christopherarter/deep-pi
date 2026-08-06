@@ -1,5 +1,5 @@
 {
-  "name": "deep-pi",
+  "name": "@arter/deep-pi",
   "version": "1.0.0",
   "description": "Direct DeepSeek cache economics, prefix stability, and retry reduction for the Pi coding agent.",
   "license": "Apache-2.0",
@@ -29,6 +29,9 @@
     "extensions": [
       "./extensions/deeppi.ts"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "LICENSE",
